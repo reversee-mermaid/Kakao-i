@@ -1,17 +1,48 @@
-body {
+* {
     margin: 0;
-    font-family: 'Poppins', 'Noto Sans KR',  sans-serif;
+    padding: 0;
+    font-family: 'Poppins', 'Noto Sans KR', sans-serif;
 }
 
-header {
-    padding: 20px 30px;
+body {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, 
+li {
+    list-style: none;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 10px 30px;
     background: #ffe100;
-    color: #fff;
+    color: #000;
+    font-size: 14px;
 }
 
-h1 {
-    margin: 0 auto;
-    
+.header .inner {
+    display: flex;
+    align-items: center;
+}
+
+.gnb_list {
+    display: flex;
+}
+
+.gnb_list li {
+    margin-left: 50px;
+}
+
+.header .inner > a {
+    position: absolute; 
+    right: 30px;
 }
 
 main {
@@ -26,14 +57,4 @@ footer {
     border-top: 1px solid #666;
     text-align: center;
     color: #666;
-    
-    /* padding-bottom: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-left: 20px; */
-    
-    /* padding: 20px 20px 20px 20px; */
-
-    /* padding: 20px 20px; */
 }
-

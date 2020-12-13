@@ -1,0 +1,56 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid #666;
+    color: #666;
+    background: #fff;
+    font-size: 14px;
+}
+
+.footer .inner {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: flex-start; /*flex item의 수직*/
+    justify-content: space-between; /*flex item의 수평*/
+}
+
+.btn_top {
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.copyright {
+    display: block;
+    padding-top: 71px;
+}
+
+.policy_list li,
+.share_list li,
+.share_list {
+    display: inline-block;
+}
+
+.policy_list li {
+    margin-right: 30px;
+}
+
+.share_title {
+    color: #000;
+}
+
+.share_list img {
+    width: 24px ;
+}
+
+.related_list {
+    margin-bottom: 30px;
+}
+
+.ico_img {
+    width: 24px;
+    vertical-align: middle; /*수평*/
+    
+    margin-left: 8px;
+}

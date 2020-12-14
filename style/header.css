@@ -1,6 +1,6 @@
 .header {
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     width: 100%;
     color: #fff;
@@ -9,6 +9,7 @@
     z-index: 1;
 }
 
+.header.act,
 .header:hover {
     background: #fff;
     color: #666;

@@ -1,4 +1,4 @@
-.header {
+#header {
     position: fixed;
     /* position: absolute; */
     top: 0;
@@ -9,21 +9,21 @@
     z-index: 1;
 }
 
-.header.act,
-.header:hover {
+#header.act,
+#header:hover {
     background: #fff;
     color: #666;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.header .inner {
+#header .inner {
     display: flex;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.header .inner > a {
+#header .inner > a {
     position: absolute; 
     right: 30px;
 }

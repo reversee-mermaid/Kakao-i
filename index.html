@@ -19,7 +19,7 @@
     <!-- <div id="wrap"> -->
 
     <!-- header -->
-    <header class="header">
+    <header id="header">
         <div class="inner">
             <h1>
                 <a href="#">
@@ -43,12 +43,24 @@
     <!-- main -->
     <main class="main">
         <!-- visual -->
-        <div class="visual">
-            <img style="width: 100%;" src="./asset/main01.jpg" alt="">
-            <a href="#">
-                <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
-                <span>미니헥사 더 알아보기</span>
-            </a>
+        <div id="visual">
+            <ul id="slide_list">
+                <li class="slide_item">
+                    <img style="width: 100%;" src="./asset/main01.jpg" alt="">
+                    <a class="slide_txt" href="#">
+                        <strong>더 작고 똑똑한 스마트 스피커 미니헥사</strong>
+                        <span>미니헥사 더 알아보기</span>
+                    </a>
+                </li>
+                <li class="slide_item">
+                    <img style="width: 100%;" src="./asset/main02.jpg" alt="">
+                    <a class="slide_txt" href="#">
+                        <strong>내 손안의 스마트한 친구 미니링크</strong>
+                        <span>미니링크 더 알아보기</span>
+                    </a>
+                </li>
+            </ul>
+
         </div>
 
         <!-- info feature -->
@@ -91,7 +103,8 @@
                             </div>
                             <div class="inside_content">
                                 <strong>인터페이스의 혁신을 보여주는 카카오 i 차량 음성인식</strong>
-                                <p>카카오 i의 음성인식 기술과 방대한 정보데이터를 기반으로, 말로 더 쉽고 편리한 드라이빙 경험을 제공합니다. 주행 중에도 말로 쉽고 편하게 차량 제어, 길 찾기는 물론, 카카오톡, 뉴스, 게임 등 다양한 서비스를 이용해보세요.</p>
+                                <p>카카오 i의 음성인식 기술과 방대한 정보데이터를 기반으로, 말로 더 쉽고 편리한 드라이빙 경험을 제공합니다. 주행 중에도 말로 쉽고 편하게 차량 제어,
+                                    길 찾기는 물론, 카카오톡, 뉴스, 게임 등 다양한 서비스를 이용해보세요.</p>
                             </div>
                         </a>
                     </li>
@@ -103,7 +116,8 @@
                             </div>
                             <div class="inside_content">
                                 <strong>새로운 라이딩 경험을 선사하는 헤이카카오를 품은 스마트 헬멧</strong>
-                                <p>카카오 i가 생활에 필요한 액세서리들과 만나면 또 다른 가치가 만들어집니다. 헤이카카오와 연동되는 세나 스마트 헬멧으로 더욱 안전하나 라이딩을 즐길 수 있는 것처럼요.</p>
+                                <p>카카오 i가 생활에 필요한 액세서리들과 만나면 또 다른 가치가 만들어집니다. 헤이카카오와 연동되는 세나 스마트 헬멧으로 더욱 안전하나 라이딩을 즐길 수
+                                    있는 것처럼요.</p>
                             </div>
                         </a>
                     </li>
@@ -115,7 +129,8 @@
                             </div>
                             <div class="inside_content">
                                 <strong>리모콘 없이 음성으로 즐기는 다양한 콘텐츠</strong>
-                                <p>카카오미니가 TV 및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절을 하는 등 일상 속 말로 하는 편리함을 느껴보세요. 날씨, 뉴스, 환율, 정보검색 등 다양한 콘텐츠를 이용할 수 있어요.</p>
+                                <p>카카오미니가 TV 및 셋탑박스와 같은 제품과 연동되어, 말 한마디로 채널을 변경하고, 음량을 조절을 하는 등 일상 속 말로 하는 편리함을 느껴보세요.
+                                    날씨, 뉴스, 환율, 정보검색 등 다양한 콘텐츠를 이용할 수 있어요.</p>
                             </div>
                         </a>
                     </li>
@@ -126,7 +141,7 @@
 
     <!-- footer -->
     <footer class="footer">
-       <div class="inner">
+        <div class="inner">
             <div class="logo">
                 <a href="#">
                     <img class="logo_img" src="./asset/logo01.png" style="width: 82px;" alt="Kakao i">
@@ -179,25 +194,12 @@
             </div>
 
             <button onclick="topFunction()" type="button" class="btn_top">Back to Top</button>
-       </div>
+        </div>
     </footer>
 
-    <script>
-        //back to top button event
-        function topFunction() {
-            window.scroll(null, 0); //scroll(x축, y축)
-        }
-
-        //header
-        const header = document.getElementsByClassName('header')[0];
-        window.onscroll = function() {
-            if(window.scrollY != 0) {
-                header.classList.add('act');
-            } else {
-                header.classList.remove('act');
-            }
-        }
-    </script>
+    <script src="./script/back_to_top.js"></script>
+    <script src="./script/header_scrolled.js"></script>
+    <script src="./script/slide.js"></script>
 </body>
 
 </html>
